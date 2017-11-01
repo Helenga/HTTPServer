@@ -86,7 +86,7 @@ namespace HTTPServer
                 RequestUri += "index.html";
             }
 
-            string FilePath = "data/" + RequestUri;
+            string FilePath = "./pages" + RequestUri;
 
             // Если в папке data не существует данного файла, посылаем ошибку 404
             if (!File.Exists(FilePath))
